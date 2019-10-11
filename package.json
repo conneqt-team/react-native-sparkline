@@ -49,6 +49,7 @@
     "url": "https://github.com/fanqfanh/react-native-sparkline/issues"
   },
   "peerDependencies": {
+    "@react-native-community/art": "^1.0.1",
     "react": "*",
     "react-native": "*"
   },

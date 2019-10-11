@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
+import { Shape } from '@react-native-community/art'
 import * as helper from './helper'
 import * as typed from './typed'
 
@@ -17,7 +17,7 @@ const makeGuide = ({ data, where, scaleY, padding, width }: Props) => {
 }
 
 const Guide = ({ color, stroke, strokeWidth, ...props }: Props) => (
-  <ART.Shape
+  <Shape
     stroke={stroke || color}
     strokeWidth={strokeWidth}
     d={makeGuide(props)}

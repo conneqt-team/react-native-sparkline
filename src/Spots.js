@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
+import { Shape } from '@react-native-community/art'
 import { makeCircle } from './shape'
 import * as helper from './helper'
 import * as typed from './typed'
@@ -11,7 +11,7 @@ import * as typed from './typed'
 type Props = typed.ShareProps
 
 const Spots = ({ color, stroke, strokeWidth, ...props }: Props) => (
-  <ART.Shape
+  <Shape
     stroke={stroke || color}
     strokeWidth={strokeWidth}
     d={helper

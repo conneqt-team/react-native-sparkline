@@ -3,10 +3,10 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
 import { makeRect } from './shape'
 import * as helper from './helper'
 import * as typed from './typed'
+import { Shape } from '@react-native-community/art'
 
 type Props = typed.ShareProps
 
@@ -25,7 +25,7 @@ const Band = ({
   const high = max - half / 2
 
   return (
-    <ART.Shape
+    <Shape
       fill={fill || color}
       opacity={opacity}
       d={makeRect({

@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
+import { Surface } from '@react-native-community/art'
 import createScale from './scale'
 import * as helper from './helper'
 import * as typed from './typed'
@@ -47,7 +47,7 @@ const Sparkline = ({ children, ...props }: Props) => {
 
   return (
     // prettier-ignore
-    <ART.Surface
+    <Surface
       width={props.width}
       height={props.height}
       style={props.style}
@@ -59,7 +59,7 @@ const Sparkline = ({ children, ...props }: Props) => {
           ...helpers
         })
       )}
-    </ART.Surface>
+    </Surface>
   )
 }
 

@@ -19,13 +19,13 @@ This library is based on [ART][art-library] and works on both Android and iOS pl
 
 ## Usage
 
-* Install
+- Install
 
 ```bash
 npm i react-native-sparkline
 ```
 
-* Use it
+- Use it
 
 ```jsx harmony
 import React from 'react'

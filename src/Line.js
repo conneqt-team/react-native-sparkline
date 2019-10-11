@@ -3,14 +3,14 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
+import { Shape } from '@react-native-community/art'
 import { makeLine } from './shape'
 import * as typed from './typed'
 
 type Props = typed.ShareProps
 
 const Line = ({ points, color, stroke, strokeWidth }: Props) => (
-  <ART.Shape
+  <Shape
     stroke={stroke || color}
     strokeWidth={strokeWidth}
     d={makeLine(points)}

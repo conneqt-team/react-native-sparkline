@@ -2,7 +2,7 @@
  * @flow
  */
 
-import { ART } from 'react-native'
+import { Path } from '@react-native-community/art'
 import * as typed from './typed'
 
 type CircleProps = {
@@ -62,5 +62,5 @@ export const makeLine = (points: typed.Point[]) =>
     (path, p, idx) => idx === 0
       ? path.moveTo(p.x, p.y)
       : path.lineTo(p.x, p.y),
-    new ART.Path()
+    new Path()
   )

@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react'
-import { ART } from 'react-native'
+import { Shape } from '@react-native-community/art'
 import { makeLine } from './shape'
 import * as typed from './typed'
 
@@ -21,7 +21,7 @@ const makeFill = ({ points, height, padding }: Props) => {
 }
 
 const Fill = ({ color, fill, opacity, ...props }: Props) => (
-  <ART.Shape fill={fill || color} opacity={opacity} d={makeFill(props)} />
+  <Shape fill={fill || color} opacity={opacity} d={makeFill(props)} />
 )
 
 export default Fill
