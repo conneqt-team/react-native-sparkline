@@ -51,6 +51,7 @@ const Sparkline = ({ children, ...props }: Props) => {
       width={props.width}
       height={props.height}
       style={props.style}
+      visible
     >
       {React.Children.map(children, child =>
         React.cloneElement(child, {
