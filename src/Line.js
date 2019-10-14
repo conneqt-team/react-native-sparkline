@@ -14,6 +14,7 @@ const Line = ({ points, color, stroke, strokeWidth }: Props) => (
     stroke={stroke || color}
     strokeWidth={strokeWidth}
     d={makeLine(points)}
+    visible={true}
   />
 )
 

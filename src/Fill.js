@@ -21,7 +21,7 @@ const makeFill = ({ points, height, padding }: Props) => {
 }
 
 const Fill = ({ color, fill, opacity, ...props }: Props) => (
-  <Shape fill={fill || color} opacity={opacity} d={makeFill(props)} />
+  <Shape fill={fill || color} opacity={opacity} d={makeFill(props)} visible={true} />
 )
 
 export default Fill

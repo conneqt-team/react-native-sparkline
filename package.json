@@ -4,7 +4,6 @@
   "description": "An ART-based sparkline component for react-native",
   "main": "src/index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "lint": "prettier --write '**/*.{js,ts,md}'; standard --fix",
     "test": "jest"
   },
